@@ -59,7 +59,7 @@ public class NotEnoughLib {
         LOGGER.info("HELLO from NTL server starting");
     }
 
-    @EventBusSubscriber(modid = NotEnoughLib.MOD_ID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+    @EventBusSubscriber(modid = NotEnoughLib.MOD_ID, value = Dist.CLIENT)
     static class ClientModEvents {
         @SubscribeEvent
         static void onClientSetup(FMLClientSetupEvent event) {
