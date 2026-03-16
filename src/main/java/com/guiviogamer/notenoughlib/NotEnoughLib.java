@@ -1,5 +1,8 @@
 package com.guiviogamer.notenoughlib;
 
+import com.guiviogamer.notenoughlib.block.ModBlocks;
+import com.guiviogamer.notenoughlib.item.ModCreativeModeTabs;
+import com.guiviogamer.notenoughlib.item.ModItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -41,6 +44,10 @@ public class NotEnoughLib {
 
     public NotEnoughLib(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
+        ModCreativeModeTabs.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);

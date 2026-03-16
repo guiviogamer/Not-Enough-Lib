@@ -1,3 +1,7 @@
 {
+  "item.notenoughlib.zinc_ingot": "Zinc Ingot",
+  "item.notenoughlib.raw_zinc": "Raw Zinc",
+  "item.notenoughlib.crushed_zinc": "Crushed Zinc",
 
+  "creativetab.notenoughlib.resources_tab": "NTL Resources"
 }
