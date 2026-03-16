@@ -1,7 +1,10 @@
 {
   "item.notenoughlib.zinc_ingot": "Lingote de Zinco",
+  "item.notenoughlib.zinc_nugget": "Pepita De Zinco",
   "item.notenoughlib.raw_zinc": "Zinco Bruto",
   "item.notenoughlib.crushed_zinc": "Pó De Zinco",
+
+  "block.notenoughlib.zinc_block": "Bloco de Zinco",
 
   "creativetab.notenoughlib.resources_tab": "Recursos Do NTL"
 }

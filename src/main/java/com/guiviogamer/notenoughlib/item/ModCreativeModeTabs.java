@@ -1,6 +1,7 @@
 package com.guiviogamer.notenoughlib.item;
 
 import com.guiviogamer.notenoughlib.NotEnoughLib;
+import com.guiviogamer.notenoughlib.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -18,7 +19,9 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.ZINC_INGOT.get()))
                     .title(Component.translatable("creativetab.notenoughlib.resources_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModBlocks.ZINC_BLOCK);
                         output.accept(ModItems.ZINC_INGOT);
+                        output.accept(ModItems.ZINC_NUGGET);
                         output.accept(ModItems.RAW_ZINC);
                         output.accept(ModItems.CRUSHED_ZINC);
                     }).build());

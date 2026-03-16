@@ -12,6 +12,8 @@ public class ModItems {
     // Ingots/Ores
     public static final DeferredItem<Item> ZINC_INGOT = ITEMS.register("zinc_ingot",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ZINC_NUGGET = ITEMS.register("zinc_nugget",
+            () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> RAW_ZINC = ITEMS.register("raw_zinc",
             () -> new Item(new Item.Properties()));
     // Dusts
