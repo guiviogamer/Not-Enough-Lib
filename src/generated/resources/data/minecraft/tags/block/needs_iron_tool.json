@@ -1,5 +1,7 @@
 {
   "values": [
-    "notenoughlib:zinc_block"
+    "notenoughlib:zinc_block",
+    "notenoughlib:zinc_ore",
+    "notenoughlib:zinc_deepslate_ore"
   ]
 }

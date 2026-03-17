@@ -28,11 +28,10 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     protected void generate() {
         dropSelf(ModBlocks.ZINC_BLOCK.get());
 
-        /* add(ModBlocks.ZINC_ORE.get(),
+        add(ModBlocks.ZINC_ORE.get(),
                 block -> createOreDrop(ModBlocks.ZINC_ORE.get(), ModItems.RAW_ZINC.get()));
         add(ModBlocks.ZINC_DEEPSLATE_ORE.get(),
                 block -> createOreDrop(ModBlocks.ZINC_DEEPSLATE_ORE.get(), ModItems.RAW_ZINC.get()));
-        */
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {

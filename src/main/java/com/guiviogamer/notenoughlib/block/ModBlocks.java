@@ -2,9 +2,12 @@ package com.guiviogamer.notenoughlib.block;
 
 import com.guiviogamer.notenoughlib.NotEnoughLib;
 import com.guiviogamer.notenoughlib.item.ModItems;
+import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
@@ -22,6 +25,18 @@ public class ModBlocks {
                     .strength(5.0F, 6.0F)
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.METAL)));
+    public static final DeferredBlock<Block> ZINC_ORE = registerBlock("zinc_ore",
+            () -> new DropExperienceBlock(ConstantInt.of(0),
+                    BlockBehaviour.Properties.of()
+                            .strength(3.0F, 3.0F)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> ZINC_DEEPSLATE_ORE = registerBlock("zinc_deepslate_ore",
+            () -> new DropExperienceBlock(ConstantInt.of(0),
+                    BlockBehaviour.Properties.of()
+                            .strength(4.5F, 3.0F)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.DEEPSLATE)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

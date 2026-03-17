@@ -21,7 +21,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
         List<ItemLike> ZINC_SMELTABLES = List.of(ModItems.RAW_ZINC,
-                ModItems.CRUSHED_ZINC/* , ModBlocks.ZINC_ORE, ModBlocks.ZINC_DEEPSLATE_ORE */);
+                ModItems.CRUSHED_ZINC, ModBlocks.ZINC_ORE, ModBlocks.ZINC_DEEPSLATE_ORE);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ZINC_BLOCK.get())
                 .pattern("ZZZ")

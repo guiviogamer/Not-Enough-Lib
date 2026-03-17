@@ -16,9 +16,11 @@ public class ModCreativeModeTabs {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, NotEnoughLib.MOD_ID);
 
     public static final Supplier<CreativeModeTab> RESOURCES_TAB = CREATIVE_MODE_TAB.register("resources_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.ZINC_INGOT.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.ZINC_ORE.get()))
                     .title(Component.translatable("creativetab.notenoughlib.resources_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModBlocks.ZINC_DEEPSLATE_ORE);
+                        output.accept(ModBlocks.ZINC_ORE);
                         output.accept(ModBlocks.ZINC_BLOCK);
                         output.accept(ModItems.ZINC_INGOT);
                         output.accept(ModItems.ZINC_NUGGET);

@@ -5,6 +5,8 @@
   "item.notenoughlib.crushed_zinc": "Pó De Zinco",
 
   "block.notenoughlib.zinc_block": "Bloco de Zinco",
+  "block.notenoughlib.zinc_ore": "Minério de Zinco",
+  "block.notenoughlib.zinc_deepslate_ore": "Minério de Ardósia de Zinco",
 
   "creativetab.notenoughlib.resources_tab": "Recursos Do NTL"
 }

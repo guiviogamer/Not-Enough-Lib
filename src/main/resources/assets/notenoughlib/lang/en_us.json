@@ -5,6 +5,8 @@
   "item.notenoughlib.crushed_zinc": "Crushed Zinc",
 
   "block.notenoughlib.zinc_block": "Block of Zinc",
+  "block.notenoughlib.zinc_ore": "Zinc Ore",
+  "block.notenoughlib.zinc_deepslate_ore": "Zinc Deepslate Ore",
 
   "creativetab.notenoughlib.resources_tab": "NTL Resources"
 }
