@@ -3,12 +3,12 @@
   "category": "misc",
   "cookingtime": 200,
   "experience": 0.25,
-  "group": "zinc_ingot",
+  "group": "diamond",
   "ingredient": {
-    "item": "notenoughlib:crushed_zinc"
+    "item": "notenoughlib:diamond_dust"
   },
   "result": {
     "count": 1,
-    "id": "notenoughlib:zinc_ingot"
+    "id": "minecraft:diamond"
   }
 }

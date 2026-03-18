@@ -2,9 +2,13 @@ package com.guiviogamer.notenoughlib.datagen;
 
 import com.guiviogamer.notenoughlib.NotEnoughLib;
 import com.guiviogamer.notenoughlib.item.ModItems;
+import com.guiviogamer.notenoughlib.util.ModTags;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -27,5 +31,31 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(Items.STICK)
                 .add(Items.COMPASS);
          */
+        tag(ModTags.Items.ZINC_INGOTS)
+                .add(ModItems.ZINC_INGOT.get());
+        tag(ModTags.Items.ZINC_DUSTS)
+                .add(ModItems.ZINC_DUST.get());
+        tag(ModTags.Items.STEEL_INGOTS)
+                .add(ModItems.STEEL_INGOT.get());
+        tag(ModTags.Items.STEEL_DUSTS)
+                .add(ModItems.STEEL_DUST.get());
+        tag(ModTags.Items.BRASS_INGOTS)
+                .add(ModItems.BRASS_INGOT.get());
+        tag(ModTags.Items.BRASS_DUSTS)
+                .add(ModItems.BRASS_DUST.get());
+        tag(ModTags.Items.ELECTRUM_INGOTS)
+                .add(ModItems.ELECTRUM_INGOT.get());
+        tag(ModTags.Items.ELECTRUM_DUSTS)
+                .add(ModItems.ELECTRUM_DUST.get());
+        tag(ModTags.Items.IRON_DUSTS)
+                .add(ModItems.IRON_DUST.get());
+        tag(ModTags.Items.GOLD_DUSTS)
+                .add(ModItems.GOLD_DUST.get());
+        tag(ModTags.Items.COPPER_DUSTS)
+                .add(ModItems.COPPER_DUST.get());
+        tag(ModTags.Items.DIAMOND_DUSTS)
+                .add(ModItems.DIAMOND_DUST.get());
+        tag(ModTags.Items.COAL_DUSTS)
+                .add(ModItems.CARBON_DUST.get());
     }
 }

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "electrum_ingot",
+  "ingredient": {
+    "item": "notenoughlib:electrum_dust"
+  },
+  "result": {
+    "count": 1,
+    "id": "notenoughlib:electrum_ingot"
+  }
+}

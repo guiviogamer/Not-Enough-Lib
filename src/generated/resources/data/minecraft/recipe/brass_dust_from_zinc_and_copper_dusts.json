@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "tag": "c:dusts/copper"
+    },
+    "Z": {
+      "tag": "c:dusts/zinc"
+    }
+  },
+  "pattern": [
+    "ZC",
+    "CC"
+  ],
+  "result": {
+    "count": 3,
+    "id": "notenoughlib:brass_dust"
+  }
+}

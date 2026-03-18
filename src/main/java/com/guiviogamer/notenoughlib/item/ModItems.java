@@ -16,8 +16,30 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> RAW_ZINC = ITEMS.register("raw_zinc",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> STEEL_INGOT = ITEMS.register("steel_ingot",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> BRASS_INGOT = ITEMS.register("brass_ingot",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ELECTRUM_INGOT = ITEMS.register("electrum_ingot",
+            () -> new Item(new Item.Properties()));
     // Dusts
-    public static final DeferredItem<Item> CRUSHED_ZINC = ITEMS.register("crushed_zinc",
+    public static final DeferredItem<Item> ZINC_DUST = ITEMS.register("zinc_dust",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> IRON_DUST = ITEMS.register("iron_dust",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> GOLD_DUST = ITEMS.register("gold_dust",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> COPPER_DUST = ITEMS.register("copper_dust",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DIAMOND_DUST = ITEMS.register("diamond_dust",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> CARBON_DUST = ITEMS.register("carbon_dust",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> STEEL_DUST = ITEMS.register("steel_dust",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> BRASS_DUST = ITEMS.register("brass_dust",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> ELECTRUM_DUST = ITEMS.register("electrum_dust",
             () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {

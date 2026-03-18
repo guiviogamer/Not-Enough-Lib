@@ -3,12 +3,12 @@
   "category": "misc",
   "cookingtime": 100,
   "experience": 0.25,
-  "group": "zinc_ingot",
+  "group": "steel_ingot",
   "ingredient": {
-    "item": "notenoughlib:crushed_zinc"
+    "item": "notenoughlib:steel_dust"
   },
   "result": {
     "count": 1,
-    "id": "notenoughlib:zinc_ingot"
+    "id": "notenoughlib:steel_ingot"
   }
 }

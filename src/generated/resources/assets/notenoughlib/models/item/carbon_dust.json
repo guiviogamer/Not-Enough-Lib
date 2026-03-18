@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "notenoughlib:item/crushed_zinc"
+    "layer0": "notenoughlib:item/carbon_dust"
   }
 }

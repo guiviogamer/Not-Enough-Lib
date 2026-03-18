@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_crushed_zinc": {
+    "has_diamond_dust": {
       "conditions": {
         "items": [
           {
-            "items": "notenoughlib:crushed_zinc"
+            "items": "notenoughlib:diamond_dust"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "notenoughlib:zinc_ingot_from_smelting_crushed_zinc"
+        "recipe": "notenoughlib:diamond_from_smelting_diamond_dust"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_crushed_zinc"
+      "has_diamond_dust"
     ]
   ],
   "rewards": {
     "recipes": [
-      "notenoughlib:zinc_ingot_from_smelting_crushed_zinc"
+      "notenoughlib:diamond_from_smelting_diamond_dust"
     ]
   }
 }
