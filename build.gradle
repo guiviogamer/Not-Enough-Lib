@@ -170,8 +170,8 @@ publishing {
     publications {
         mavenJava(MavenPublication) {
             groupId = 'com.guiviogamer'
-            artifactId = 'notenoughlib'
-            version = '0.0.1'
+            artifactId = "${mod_id}"
+            version = "${mod_version}"
             from components.java
         }
     }
