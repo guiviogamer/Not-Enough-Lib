@@ -40,12 +40,15 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ELECTRUM_INGOT);
                         output.accept(ModItems.ELECTRUM_DUST);
 
-                        // Vanilla
+                        // Vanilla dusts
                         output.accept(ModItems.IRON_DUST);
                         output.accept(ModItems.GOLD_DUST);
                         output.accept(ModItems.COPPER_DUST);
                         output.accept(ModItems.DIAMOND_DUST);
                         output.accept(ModItems.CARBON_DUST);
+
+                        // Foods
+                        output.accept(ModItems.BAGUETTE);
 
                     }).build());
 
