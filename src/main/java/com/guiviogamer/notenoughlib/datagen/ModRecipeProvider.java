@@ -113,6 +113,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_redstone", has(Items.REDSTONE))
                 .save(recipeOutput, "electrum_dust_from_gold_dust_and_redstone");
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.BAGUETTE.get())
+                .pattern("  B")
+                .pattern(" B ")
+                .pattern("B  ")
+                .define('B', Items.BREAD)
+                .unlockedBy("has_bread", has(Items.BREAD))
+                .save(recipeOutput, "baguette_from_bread");
+
         // Smelting
         oreSmelting(recipeOutput, ZINC_SMELTABLES, RecipeCategory.MISC, ModItems.ZINC_INGOT.get(), 0.25f, 200, "zinc_ingot");
         oreSmelting(recipeOutput, IRON_SMELTABLES, RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 200, "iron_ingot");

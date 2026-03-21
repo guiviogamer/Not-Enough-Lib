@@ -41,6 +41,9 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> ELECTRUM_DUST = ITEMS.register("electrum_dust",
             () -> new Item(new Item.Properties()));
+    // Foods
+    public static final DeferredItem<Item> BAGUETTE = ITEMS.register("baguette",
+            () -> new Item(new Item.Properties().food(ModFoodProperties.BAGUETTE)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

@@ -32,5 +32,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.COPPER_DUST.get());
         basicItem(ModItems.DIAMOND_DUST.get());
         basicItem(ModItems.CARBON_DUST.get());
+
+        basicItem(ModItems.BAGUETTE.get());
     }
 }
