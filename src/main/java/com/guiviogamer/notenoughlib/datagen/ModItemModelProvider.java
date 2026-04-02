@@ -3,7 +3,11 @@ package com.guiviogamer.notenoughlib.datagen;
 import com.guiviogamer.notenoughlib.NotEnoughLib;
 import com.guiviogamer.notenoughlib.item.ModItems;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.ItemLike;
+import net.neoforged.neoforge.client.model.generators.ItemModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
+import net.neoforged.neoforge.client.model.generators.ModelFile;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 
 public class ModItemModelProvider extends ItemModelProvider {
@@ -33,6 +37,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.DIAMOND_DUST.get());
         basicItem(ModItems.CARBON_DUST.get());
 
-        basicItem(ModItems.BAGUETTE.get());
+        handheldItem(ModItems.BAGUETTE.get());
     }
 }
