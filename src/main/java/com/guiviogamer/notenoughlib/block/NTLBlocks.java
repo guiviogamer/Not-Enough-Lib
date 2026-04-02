@@ -1,9 +1,8 @@
 package com.guiviogamer.notenoughlib.block;
 
 import com.guiviogamer.notenoughlib.NotEnoughLib;
-import com.guiviogamer.notenoughlib.item.ModItems;
+import com.guiviogamer.notenoughlib.item.NTLItems;
 import net.minecraft.util.valueproviders.ConstantInt;
-import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -17,7 +16,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import java.util.function.Supplier;
 
 
-public class ModBlocks {
+public class NTLBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(NotEnoughLib.MOD_ID);
 
     public static final DeferredBlock<Block> ZINC_BLOCK = registerBlock("zinc_block",
@@ -45,7 +44,7 @@ public class ModBlocks {
     }
 
     private static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block) {
-        ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
+        NTLItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
 
     public static void register(IEventBus eventBus) {

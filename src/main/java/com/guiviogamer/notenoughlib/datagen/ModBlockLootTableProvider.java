@@ -1,7 +1,7 @@
 package com.guiviogamer.notenoughlib.datagen;
 
-import com.guiviogamer.notenoughlib.block.ModBlocks;
-import com.guiviogamer.notenoughlib.item.ModItems;
+import com.guiviogamer.notenoughlib.block.NTLBlocks;
+import com.guiviogamer.notenoughlib.item.NTLItems;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
@@ -26,12 +26,12 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
-        dropSelf(ModBlocks.ZINC_BLOCK.get());
+        dropSelf(NTLBlocks.ZINC_BLOCK.get());
 
-        add(ModBlocks.ZINC_ORE.get(),
-                block -> createOreDrop(ModBlocks.ZINC_ORE.get(), ModItems.RAW_ZINC.get()));
-        add(ModBlocks.ZINC_DEEPSLATE_ORE.get(),
-                block -> createOreDrop(ModBlocks.ZINC_DEEPSLATE_ORE.get(), ModItems.RAW_ZINC.get()));
+        add(NTLBlocks.ZINC_ORE.get(),
+                block -> createOreDrop(NTLBlocks.ZINC_ORE.get(), NTLItems.RAW_ZINC.get()));
+        add(NTLBlocks.ZINC_DEEPSLATE_ORE.get(),
+                block -> createOreDrop(NTLBlocks.ZINC_DEEPSLATE_ORE.get(), NTLItems.RAW_ZINC.get()));
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {
@@ -44,6 +44,6 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected Iterable<Block> getKnownBlocks() {
-        return ModBlocks.BLOCKS.getEntries().stream().map(Holder::value)::iterator;
+        return NTLBlocks.BLOCKS.getEntries().stream().map(Holder::value)::iterator;
     }
 }

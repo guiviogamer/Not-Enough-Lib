@@ -1,7 +1,7 @@
 package com.guiviogamer.notenoughlib.datagen;
 
 import com.guiviogamer.notenoughlib.NotEnoughLib;
-import com.guiviogamer.notenoughlib.block.ModBlocks;
+import com.guiviogamer.notenoughlib.block.NTLBlocks;
 import net.minecraft.data.PackOutput;
 import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
@@ -14,9 +14,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        blockWithItem(ModBlocks.ZINC_BLOCK);
-        blockWithItem(ModBlocks.ZINC_ORE);
-        blockWithItem(ModBlocks.ZINC_DEEPSLATE_ORE);
+        blockWithItem(NTLBlocks.ZINC_BLOCK);
+        blockWithItem(NTLBlocks.ZINC_ORE);
+        blockWithItem(NTLBlocks.ZINC_DEEPSLATE_ORE);
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {

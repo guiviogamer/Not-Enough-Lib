@@ -1,7 +1,7 @@
 package com.guiviogamer.notenoughlib.worldgen;
 
 import com.guiviogamer.notenoughlib.NotEnoughLib;
-import com.guiviogamer.notenoughlib.block.ModBlocks;
+import com.guiviogamer.notenoughlib.block.NTLBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
@@ -24,8 +24,8 @@ public class ModConfiguredFeatures {
         RuleTest deepslateReplaceables = new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
 
         List<OreConfiguration.TargetBlockState> overworldZincOres = List.of(
-                OreConfiguration.target(stoneReplaceables, ModBlocks.ZINC_ORE.get().defaultBlockState()),
-                OreConfiguration.target(deepslateReplaceables, ModBlocks.ZINC_DEEPSLATE_ORE.get().defaultBlockState()));
+                OreConfiguration.target(stoneReplaceables, NTLBlocks.ZINC_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceables, NTLBlocks.ZINC_DEEPSLATE_ORE.get().defaultBlockState()));
 
         register(context, OVERWORLD_ZINC_ORE_KEY, Feature.ORE, new OreConfiguration(overworldZincOres, 9));
     }

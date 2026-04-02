@@ -6,7 +6,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-public class ModItems {
+public class NTLItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(NotEnoughLib.MOD_ID);
 
     // Ingots/Ores
