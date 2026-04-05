@@ -50,6 +50,10 @@ public class ModCreativeModeTabs {
                         // Foods
                         output.accept(NTLItems.BAGUETTE);
 
+                        // Other Resources
+                        output.accept(NTLItems.CARDBOARD_PULP);
+                        output.accept(NTLItems.CARDBOARD);
+
                     }).build());
 
     public static void register(IEventBus eventBus) {

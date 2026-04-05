@@ -53,5 +53,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(NTLItems.DIAMOND_DUST.get());
         tag(ModTags.Items.COAL_DUSTS)
                 .add(NTLItems.CARBON_DUST.get());
+        tag(ModTags.Items.CARDBOARD)
+                .add(NTLItems.CARDBOARD.get());
     }
 }

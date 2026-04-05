@@ -32,6 +32,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         List<ItemLike> STEEL_SMELTABLES = List.of(NTLItems.STEEL_DUST);
         List<ItemLike> BRASS_SMELTABLES = List.of(NTLItems.BRASS_DUST);
         List<ItemLike> ELECTRUM_SMELTABLES = List.of(NTLItems.ELECTRUM_DUST);
+        List<ItemLike> CARDBOARD_SMELTABLES = List.of(NTLItems.CARDBOARD_PULP);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, NTLBlocks.ZINC_BLOCK.get())
                 .pattern("ZZZ")
@@ -121,6 +122,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_bread", has(Items.BREAD))
                 .save(recipeOutput, "baguette_from_bread");
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, NTLItems.CARDBOARD_PULP.get(), 3)
+                .pattern("WP")
+                .pattern("PP")
+                .define('W', Items.WATER_BUCKET)
+                .define('P', Items.PAPER)
+                .unlockedBy("has_water_bucket", has(Items.WATER_BUCKET))
+                .unlockedBy("has_paper", has(Items.PAPER))
+                .save(recipeOutput, "cardboard_pulp_from_water_bucket_and_paper");
+
         // Smelting
         oreSmelting(recipeOutput, ZINC_SMELTABLES, RecipeCategory.MISC, NTLItems.ZINC_INGOT.get(), 0.25f, 200, "zinc_ingot");
         oreSmelting(recipeOutput, IRON_SMELTABLES, RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 200, "iron_ingot");
@@ -130,6 +140,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         oreSmelting(recipeOutput, STEEL_SMELTABLES, RecipeCategory.MISC, NTLItems.STEEL_INGOT, 0.25f, 200, "steel_ingot");
         oreSmelting(recipeOutput, BRASS_SMELTABLES, RecipeCategory.MISC, NTLItems.BRASS_INGOT, 0.25f, 200, "brass_ingot");
         oreSmelting(recipeOutput, ELECTRUM_SMELTABLES, RecipeCategory.MISC, NTLItems.ELECTRUM_INGOT, 0.25f, 200, "electrum_ingot");
+        oreSmelting(recipeOutput, CARDBOARD_SMELTABLES, RecipeCategory.MISC, NTLItems.CARDBOARD, 0.25f, 200, "cardboard");
 
         // Blasting
         oreBlasting(recipeOutput, ZINC_SMELTABLES, RecipeCategory.MISC, NTLItems.ZINC_INGOT.get(), 0.25f, 100, "zinc_ingot");

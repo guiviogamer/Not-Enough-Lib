@@ -34,5 +34,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(NTLItems.CARBON_DUST.get());
 
         handheldItem(NTLItems.BAGUETTE.get());
+
+        basicItem(NTLItems.CARDBOARD_PULP.get());
+        basicItem(NTLItems.CARDBOARD.get());
     }
 }

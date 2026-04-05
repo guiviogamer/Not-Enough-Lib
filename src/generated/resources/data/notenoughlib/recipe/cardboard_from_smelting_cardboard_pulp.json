@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "cardboard",
+  "ingredient": {
+    "item": "notenoughlib:cardboard_pulp"
+  },
+  "result": {
+    "count": 1,
+    "id": "notenoughlib:cardboard"
+  }
+}

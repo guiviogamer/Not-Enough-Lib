@@ -44,6 +44,11 @@ public class NTLItems {
     // Foods
     public static final DeferredItem<Item> BAGUETTE = ITEMS.register("baguette",
             () -> new Item(new Item.Properties().food(ModFoodProperties.BAGUETTE)));
+    // Other Resources
+    public static final DeferredItem<Item> CARDBOARD_PULP = ITEMS.register("cardboard_pulp",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> CARDBOARD = ITEMS.register("cardboard",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "minecraft:paper"
+    },
+    "W": {
+      "item": "minecraft:water_bucket"
+    }
+  },
+  "pattern": [
+    "WP",
+    "PP"
+  ],
+  "result": {
+    "count": 3,
+    "id": "notenoughlib:cardboard_pulp"
+  }
+}
