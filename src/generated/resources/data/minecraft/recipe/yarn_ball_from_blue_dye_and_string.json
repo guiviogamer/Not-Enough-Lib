@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:blue_dye"
+    },
+    "S": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "BS",
+    "SS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "notenoughlib:yarn_ball"
+  }
+}

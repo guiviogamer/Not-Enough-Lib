@@ -53,6 +53,7 @@ public class ModCreativeModeTabs {
                         // Other Resources
                         output.accept(NTLItems.CARDBOARD_PULP);
                         output.accept(NTLItems.CARDBOARD);
+                        output.accept(NTLItems.YARN_BALL);
 
                     }).build());
 

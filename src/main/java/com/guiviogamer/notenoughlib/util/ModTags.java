@@ -36,6 +36,7 @@ public class ModTags {
         public static final TagKey<Item> DIAMOND_DUSTS = createTag(neoForgeCommon, "dusts/diamond");
         public static final TagKey<Item> COAL_DUSTS = createTag(neoForgeCommon, "dusts/coal");
         public static final TagKey<Item> CARDBOARD = createTag(neoForgeCommon, "plates/cardboard");
+        public static final TagKey<Item> YARN_BALLS = createTag(neoForgeCommon, "balls/yarn");
 
         private static TagKey<Item> createTag(String modid, String name) {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath(modid, name));

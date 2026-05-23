@@ -55,5 +55,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(NTLItems.CARBON_DUST.get());
         tag(ModTags.Items.CARDBOARD)
                 .add(NTLItems.CARDBOARD.get());
+        tag(ModTags.Items.YARN_BALLS)
+                .add(NTLItems.YARN_BALL.get());
     }
 }

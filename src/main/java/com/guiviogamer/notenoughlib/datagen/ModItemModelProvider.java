@@ -37,5 +37,6 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         basicItem(NTLItems.CARDBOARD_PULP.get());
         basicItem(NTLItems.CARDBOARD.get());
+        basicItem(NTLItems.YARN_BALL.get());
     }
 }

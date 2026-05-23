@@ -49,6 +49,8 @@ public class NTLItems {
             () -> new Item(new Item.Properties()));
     public static final DeferredItem<Item> CARDBOARD = ITEMS.register("cardboard",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> YARN_BALL = ITEMS.register("yarn_ball",
+            () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

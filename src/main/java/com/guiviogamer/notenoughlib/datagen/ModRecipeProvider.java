@@ -131,6 +131,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_paper", has(Items.PAPER))
                 .save(recipeOutput, "cardboard_pulp_from_water_bucket_and_paper");
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, NTLItems.YARN_BALL.get())
+                .pattern("BS")
+                .pattern("SS")
+                .define('B', Items.BLUE_DYE)
+                .define('S', Items.STRING)
+                .unlockedBy("has_blue_dye", has(Items.BLUE_DYE))
+                .unlockedBy("has_string", has(Items.STRING))
+                .save(recipeOutput, "yarn_ball_from_blue_dye_and_string");
+
         // Smelting
         oreSmelting(recipeOutput, ZINC_SMELTABLES, RecipeCategory.MISC, NTLItems.ZINC_INGOT.get(), 0.25f, 200, "zinc_ingot");
         oreSmelting(recipeOutput, IRON_SMELTABLES, RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 200, "iron_ingot");
